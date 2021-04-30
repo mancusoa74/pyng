@@ -35,6 +35,6 @@ def main(interface):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='pyng server')
-    parser.add_argument('interface', type=str, help='interface name')
+    parser.add_argument('interface', type=str, help='Nome interfaccia su cui ricevere il frame')
     args = parser.parse_args()
     main(args.interface)

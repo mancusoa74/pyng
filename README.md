@@ -1,22 +1,22 @@
 # pyng
 
-Reachability check tool over Ethernet
+Tool per inviare un frame ethernet con un payload testuale
 
-## Requirements
+## Requisiti
 
 - Linux
-- Python 3.6 or higher
+- Python 3.6 o superiore
 
-## Usage
+## Utilizzo
 
 ### Server
 
 ```
-sudo ./pyngd $INTERFACE
+sudo ./pyngd <nome interfaccia ethernet di ricezione>
 ```
 
 ### Client
 
 ```
-sudo ./pyng $DESTINATION_MAC_ADDRESS $SOURCE_INTERFACE
+sudo ./pyng <indirizzo MAC di destinazione aa:bb:cc:dd:ee:ff:gg> <nome interfacce ethernet di trasmissione> <messaggio testuale>
 ```
