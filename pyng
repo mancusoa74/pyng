@@ -14,7 +14,7 @@ def main(target, interface, mex):
         # Send a frame
         client_socket.sendall(
             # Pack in network byte order
-            struct.pack('!6s6sH2s',
+            struct.pack('!6s6sH16s',
                         eui48_to_bytes(target),             # Destination MAC address
                         get_hardware_address(interface),    # Source MAC address
                         ETH_P_802_EX1,                      # Ethernet type
